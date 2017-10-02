@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata:400,700|Poppins');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../static/IMG_2444.jpg');
+  background-size: cover;
+  position: fixed;
+  z-index: 1000;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding-top: 13%;
+  font-family: 'Inconsolata', monospace;
+  font-weight: 400;
+
+}
+.words {
+  font-size: 3.0em;
+  padding-bottom: 4%;
+  color: white;
+}
+.title a {
+  text-decoration: none;
+  font-size: 2.0em;
+  height: 60px;
+  width: 100px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0,0,0,0.8);
+  border-style: solid;
+  border: none;
+  color: white;
+
+
+}
+.title h3 {
+  padding-bottom: 20px;
+}
+.button {
+  font-weight: bolder;
+  background: #134E5E;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #71B280, #134E5E);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #71B280, #134E5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin-top: 40px;
+  width: 150px;
+  height: 80px;
+  padding: 10px 30px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.title a:visited {
+  color: white;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
